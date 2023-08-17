@@ -1,0 +1,55 @@
+{
+  "name": "jupyter-to-markdown",
+  "displayName": "Jupyter To Markdown",
+  "description": "Convert Jupyter Notebook files (*.ipynb) to Markdown",
+  "publisher":"Leytton",
+  "version": "1.0.0",
+  "icon": "icon-j2m.jpg",
+  "repository": "https://github.com/Leytton/vsc-jupyter-to-markdown.git",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Data Science","Machine Learning","Notebooks","Programming Languages"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "l10n": "./l10n",
+  "contributes": {
+    "commands": [
+      {
+				"command": "jupytertomarkdown.ConvertToMarkdown",
+				"title": "%extension.ConvertToMarkdown.title%"
+			}
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceExtname == .ipynb",
+          "command": "jupytertomarkdown.ConvertToMarkdown"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.81.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3",
+    "@vscode/test-electron": "^2.3.2",
+    "@vscode/l10n-dev": "^0.0.18"
+  },
+  "dependencies": {
+    "@vscode/l10n": "^0.0.10"
+  }
+}
