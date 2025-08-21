@@ -3,7 +3,7 @@
   "displayName": "Jupyter To Markdown",
   "description": "Convert Jupyter Notebook files (*.ipynb) to Markdown",
   "publisher":"Leytton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "icon-j2m.jpg",
   "repository": "https://github.com/Leytton/vsc-jupyter-to-markdown.git",
   "license": "MIT",

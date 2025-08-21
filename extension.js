@@ -27,7 +27,7 @@ function activate(context) {
 			}
 			previousTerminal = terminal;
 
-			terminal.sendText(`jupyter nbconvert --to markdown '${fileName}'\n`);
+			terminal.sendText(`python -m jupyter nbconvert --to markdown "${fileName}"\n`);
 		})
 	);
 
