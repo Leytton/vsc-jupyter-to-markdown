@@ -18,9 +18,11 @@ This extension works by executing the following command:
 
 > `python -m jupyter nbconvert --to markdown "xx.ipynb"`
 
-Therefore, Jupyter needs to be installed.
+Therefore, `jupyter` needs to be installed. If the `nbconvert` dependency is missing, you also need to run the following installation command:
 
-因此需要安装jupyter。
+因此需要安装`jupyter`。若缺少`nbconvert`依赖也需要执行安装命令：
+
+> `pip install nbconvert`
 
 **Enjoy! 😀**
 
